@@ -1,0 +1,21 @@
+create database if not exists json_api;
+use json_api;
+create table if not exists products(
+id int not null auto_increment primary key,
+nome varchar(100),
+marca varchar(100),
+prezzo varchar(100)
+);
+
+INSERT INTO products (nome, marca, prezzo)
+VALUES 
+  ('Boeing 737', 'Boeing', 75000000),
+  ('Airbus A320', 'Airbus', 80000000),
+  ('Bombardier CRJ900', 'Bombardier', 47000000),
+  ('Embraer E190', 'Embraer', 56000000),
+  ('Cessna 172 Skyhawk', 'Cessna', 400000),
+  ('Gulfstream G650', 'Gulfstream Aerospace', 65000000),
+  ('Boeing 787 Dreamliner', 'Boeing', 250000000),
+  ('Airbus A380', 'Airbus', 450000000),
+  ('Lockheed Martin F-35 Lightning II', 'Lockheed Martin', 78000000),
+  ('Boeing AH-64 Apache', 'Boeing', 31000000);
